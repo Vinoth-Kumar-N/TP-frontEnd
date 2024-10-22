@@ -1,12 +1,13 @@
 import React from 'react'
 import Navbar from './components/Navbar'
-import Login from './components/Login'
-import Error from './components/Error'
-import Register from './components/Register'
-import Home from './components/Home'
+import Login from './pages/Login'
+import Error from './pages/Error'
+import Register from './pages/Register'
+import Home from './pages/Home'
+import About from './pages/About'
 import {BrowserRouter , Routes ,Route} from 'react-router-dom'
 import CreateTrip from './pages/CreateTrip'
-import EndOut from './components/EndOut'
+import EndOut from './pages/EndOut'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home/>}/>
+          <Route path='/about' element = {<About/>} />
           <Route path='/login' element={<Login/>}/>
           <Route path='/register' element={<Register/>}/>
           <Route path='/createtrip' element={<CreateTrip />} />
