@@ -51,7 +51,7 @@ const Login = () => {
   return (
     <>
       <ToastContainer />
-      <div className="h-[90vh] w-screen flex justify-center absolute items-center z-50">
+      <div className="h-[90vh] w-screen flex justify-center absolute items-center z-30">
         <div className="h-100 w-[370px] pb-5 flex flex-col justify-center items-center bg-white rounded-[30px] shadow-xl">
           <div className="w-full flex justify-end align-top">
             <CircleX onClick={() => navigate('/')} />

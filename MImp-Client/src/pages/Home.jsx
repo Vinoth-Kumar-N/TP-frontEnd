@@ -1,5 +1,6 @@
 import React from 'react'
 import homeBg from '../assets/img/homebg.jpg';
+import { Link } from 'react-router-dom';
 
 
 const Home = () => {
@@ -14,7 +15,7 @@ const Home = () => {
                   <p className="text-[18px] text-[#42505f] text-center">Your personal trip planner and travel curator, creating itineraries tailored to your interest</p>
                </div>
                <div className="mt-4">
-                  <button className="w-[7rem] h-[3rem] bg-black text-white rounded-md"><a href="/login" className="">Get Started</a></button>
+                  <button className="w-[7rem] h-[3rem] bg-black text-white rounded-md"><Link to={'/register'} >Get Started</Link></button>
                </div>
             </div>
          </div>
